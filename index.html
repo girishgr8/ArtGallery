@@ -1,0 +1,51 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+
+<html>
+<head>
+  <script>
+  	function openForm() {
+  document.getElementById("myform").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myform").style.display = "none";
+}
+</script>
+<title> Login Form Design </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<div class="titlebox">
+		
+    		</div>	
+		<div class="title">
+			
+			<div class="logo">
+  	  <img  src="logo2.png" width="390" height ="180">
+   </div>  
+
+</div>
+<button id="getStarted" type="button" onclick="openForm()">Get Started</button>
+
+
+		
+	
+
+
+	<div class="loginbox" id="myform">
+		<img src="avatar.jpg" class="avatar">
+		<h1>L O G I N</h1>
+		<form method="post" class="popup">
+			
+			<p>Username</p>
+			<input type="text" name="username" placeholder="Enter Username">
+			<P>Password</P>
+			<input type="password" name="password" placeholder="Enter Password">
+			<button type="submit" class="btn" name="login_user" onclick="closeForm()">Login</button>
+			<a href="#">Forgot Password</a></br>
+			<a href="register.php">Create Account</a>
+		</form>
+	</div>
+</body>
+</head>
+</html>
