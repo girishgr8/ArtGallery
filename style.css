@@ -1,17 +1,55 @@
-body{
+body, html{
 	margin: 0;
 	padding: 0;
 	background:  url(HomeBg.jpg);
 	background-size: cover;
 	/*background-position: center;*/
+	overflow: hidden;
 	font-family: sans-serif;
 
 }
 
-.loginbox{
+.modal{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+  	right: 15px;
+  	border: 3px solid #f1f1f1;
+}
+
+#popup{
+	background: #fff;
+	/*margin: 20% auto;*/
+	position: relative;
+	padding: 20px;
+	width: 50%;
+	height: 50%;
+	left: 40%;
+	top: 5%;
+	box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2) 0px 7px 20px 0px rgba(0,0,0,0.2);
+	max-width: 300px;
+  	background-color: black;
+  	border-color: white;
+}
+
+
+.closeBtn:hover, .closeBtn:focus{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*.modal {
 	width: 360px;
 	height: 420px;
-	 /*border: solid silver 1px;*/
+	 border: solid silver 1px;
 	background: #000;
 	color: #fff;
 	top: 50%;
@@ -21,7 +59,7 @@ body{
 	box-sizing: border-box;
 	box-shadow: 5px 10px 50px #000;
 	padding: 70px 30px;
-}
+}*/
 
 .titlebox{
 	width: 320px;
@@ -76,20 +114,20 @@ body{
 	color: black;
 }
 
-.avatar{
+#avatar{
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	position: absolute;
+	position: relative;
 	top: -50px;
 	left: 135px;
-
 }
 
-h1{
+.modal h1{
 	margin: 0;
 	padding: 0 0 20px;
 	text-align: center;
+	position: relative;
 	font-family: times-new-roman;
 	font-size: 26px;
 }
@@ -105,19 +143,19 @@ h3{
 
 
 
-.loginbox p{
+.modal p{
 	
 	margin: 0;
 	padding: 0;
 	
 }
 
-.loginbox input{
+.modal input{
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-.loginbox input[type="text"], input[type="password"]
+.modal input[type="text"], input[type="password"]
 {
 	border: none;
 	border-bottom: 1px solid blue;
@@ -146,11 +184,9 @@ h3{
 	cursor: pointer;
 	background: #23ddda;
 	color: #000;
-
-
 }
 
-.loginbox{
+/*.modal {
 	text-decoration: none;
 	font-size: 12px;
 	line-height: 20px;
@@ -161,21 +197,16 @@ h3{
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
-}
-.loginbox.popup{
+}	
+modal.popup{
 	 max-width: 300px;
   padding: 10px;
   background-color: white;
 }
 
-.loginbox a:hover{
+.modal a:hover{
 	color: #23ddda;
-
 }
-
-
-
-
 
 #getStarted {
   background-color: #000000;
@@ -186,3 +217,11 @@ h3{
   position: absolute;
   font-size: 20px;
 }
+
+/*#blur-filter {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}*/

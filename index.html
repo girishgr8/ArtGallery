@@ -3,17 +3,9 @@
 
 <html>
 <head>
-  <script>
-  	function openForm() {
-  document.getElementById("myform").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myform").style.display = "none";
-}
-</script>
 <title> Login Form Design </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="index_javascript.js"></script>
 <body>
 	<div class="titlebox">
 		
@@ -25,21 +17,25 @@ function closeForm() {
    </div>  
 
 </div>
-<button id="getStarted" type="button" onclick="openForm()">Get Started</button>
+<!--
+<button id="modalBtn" class="button" onclick="openForm()">CLICK HERE</button>
+<div id="simpleModal" class="modal">
+	<div class="modal-content"> 
+		<span id="closeBtn" onclick="closeForm()">&times;</span>
+		<p>Hello pop up window try</p>
+	</div>
+</div>
+-->
+<button id="modalBtn" class="button" type="button" onclick="openForm()">Get Started</button>
 
-
-		
-	
-
-
-	<div class="loginbox" id="myform">
-		<img src="avatar.jpg" class="avatar">
-		<h1>L O G I N</h1>
-		<form method="post" class="popup">
-			
+	<div class="modal" id="simpleModal">
+		<img src="avatar.jpg" id="avatar">
+		<form method="post" id="popup" class="modal-content">
+			<h1>L O G I N</h1>
+			<button id="closeBtn">closeBtn</button>
 			<p>Username</p>
 			<input type="text" name="username" placeholder="Enter Username">
-			<P>Password</P>
+			<p>Password</p>
 			<input type="password" name="password" placeholder="Enter Password">
 			<button type="submit" class="btn" name="login_user" onclick="closeForm()">Login</button>
 			<a href="#">Forgot Password</a></br>
