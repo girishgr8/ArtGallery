@@ -5,12 +5,16 @@
 <head>
   <script>
   	function openForm() {
-  document.getElementById("myform").style.display = "block";
+  document.getElementById("blur").style.display = "block";
+  
 }
 
 function closeForm() {
-  document.getElementById("myform").style.display = "none";
+  document.getElementById("blur").style.display = "none";
+  
 }
+
+
 </script>
 <title> Login Form Design </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -21,17 +25,16 @@ function closeForm() {
 		<div class="title">
 			
 			<div class="logo">
-  	  <img  src="logo2.png" width="390" height ="180">
+  	  <img  src="logo5.png" width="390" height ="180">
    </div>  
 
 </div>
-<button id="getStarted" type="button" onclick="openForm()">Get Started</button>
-
+<button id="getStarted" type="button" onclick="openForm()">Shop Now</button>
 
 		
 	
 
-
+<div id="blur" id="blur">
 	<div class="loginbox" id="myform">
 		<img src="avatar.jpg" class="avatar">
 		<h1>L O G I N</h1>
@@ -46,6 +49,9 @@ function closeForm() {
 			<a href="register.php">Create Account</a>
 		</form>
 	</div>
+</div>
+
+
 </body>
 </head>
 </html>
