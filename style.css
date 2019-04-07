@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background:  url(bg4.jpg);
+	background:  url(try8.jpg);
 	background-size: cover;
 	/*background-position: center;*/
 	overflow: hidden;
@@ -15,6 +15,16 @@ body{
 	width: 100%;
 	height: 700px;
 	background-size: cover;
+
+
+}
+#blur2{
+	display: none;
+	background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) );
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+
 
 }
 
@@ -34,27 +44,28 @@ body{
 .loginbox{
 	width: 360px;
 	height: 420px;
-	 /*border: solid silver 1px;*/
-	background: #000;
-	color: #fff;
+	 border: solid #159694 10px;
+	background: #fff;
+	color: #000;
 	top: 50%;
-	left: 61%;
+	left: 50%;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
 	box-shadow: 5px 10px 50px #000;
 	padding: 70px 30px;
+	z-index: 1;
 }
 
 .titlebox{
-	width: 320px;
+	width: 5000px;
 	opacity: 0.6;
 	height: 1020px;
-	background: #FFDAB9;
+		background:linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) );
 	border: solid silver 1px;
 	color: #fff;
 	top: 50%;
-	left: 27%;
+	left: 0%;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
@@ -147,7 +158,7 @@ h3{
 	background: transparent;
 	outline: none;
 	height: 40px;
-	color: #fff;
+	color: black;
 	font-size: 16px;
 	font-style: italic;
 }
@@ -190,29 +201,54 @@ h3{
   background-color: #000000;
   color: #FFFFFF;
   border-radius: 6px;
-  top:50%;
-  left:22%;
+  top:70%;
+ right:40%;
+  position: absolute;
+  font-size: 24px;
+ 
+}
+
+#getStarted:hover{
+	
+}
+
+#sell{
+	background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 6px;
+  top:70%;
+ left:10%;
   position: absolute;
   font-size: 24px;
 }
 
 .slider{
-	overflow: hidden;;
-	height: 400px;
-	width: 40%;
+	overflow: hidden;
+	height: 450px;
+	width: 50%;
 	position: relative;
-	margin-top: 12%;
-	left: 50%;
+display: none;
+	margin-top: -15%;
+	left:25%;
+	z-index: 1;
+	background:black;
+	
 }
 
 .slider figure div{
 	float: left;
 	width: 20%;
+	color: #FFFFFF;
+
 }
+
+
 
 .slider figure img{
 	width: 100%;
-	float: left;
+	
+
+	
 }
 
 .slider figure{
@@ -243,3 +279,173 @@ h3{
 	96% { left: 0%;    }
 }
 
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#tagline
+{
+	background:transparent;
+	color: #ffffff;
+	width: 50%;
+	
+	margin-top: 10%;
+	font-weight: 600;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	margin-left: 25%;
+	font-size: 200%;
+
+	
+
+}
+
+#myTag
+{
+	color: #FFFFFF;
+	width: 100%;
+	margin-left: 3%;
+	margin-top: -45%;
+	
+	position: relative;
+	text-align: center;
+	font-size: 500%;
+ font-family:times-new-roman;
+ z-index: 1;
+}
+
+		.icon-bar {
+			width: 80px; 			/* Set a specific width */
+			background-color: transparent;
+			margin-top: 20px;
+			
+			z-index: 1;
+			position: relative;
+			/* Dark-grey background */
+		}
+
+		.icon-bar a {
+			display: block; 		/* Make the links appear below each other instead of side-by-side */
+			text-align: center; 	/* Center-align text */
+			padding: 20px; 			/* Add some padding */
+			transition: all 0.3s ease; /* Add transition for hover effects */
+			color: white; 			/* White text color */
+			font-size: 36px; 	
+			box-shadow: 5px 10px 50px #000;	/* Increased font-size */
+		}
+
+		.icon-bar a:hover {
+			background-color: black; /* Add a hover color */
+		}
+
+		
+
+		.container{
+			padding: 25px;
+		}
+
+#Contact{
+	overflow: hidden;
+	height: 75px;
+	width: 20%;
+	position: relative;
+display: none;
+	margin-top: -18%;
+	left:10%;
+	z-index: 1;
+	background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) );
+	
+	color: white;
+	text-align: center;
+}
+
+#Contact a{
+	color: blue;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row{
+	display: none;
+	background:black;
+	overflow: hidden;
+	height: 300px;
+	width: 50%;
+	position: relative;
+    
+	margin-top: -15%;
+	left:25%;
+	z-index: 1;
+}
+#devInfo{
+
+
+	display: none;
+	background:black;
+	overflow: hidden;
+	height: 100px;
+	width: 50%;
+	position: relative;
+    
+	margin-top: 0%;
+	left:25%;
+	z-index: 1;
+	text-align: center;
+	font-size: 100%;
+	color: white;
+
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  text-align: center;
+  font-size: 100%;
+  color: white;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
