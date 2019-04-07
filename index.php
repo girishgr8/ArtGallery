@@ -5,11 +5,15 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script>
+
+
+
+
   	function openForm() {
   document.getElementById("blur").style.display = "block";
   
-  document.getElementById("getStarted").style.display='none';
-  document.getElementById("sell").style.display='none';
+  document.getElementById("getStarted").style.display="none";
+  
 
   
 }
@@ -18,13 +22,14 @@
   document.getElementById("blur2").style.display = "block";
   
   document.getElementById("getStarted").style.display='none';
-  document.getElementById("sell").style.display='none';
+  
 
   
 }
 function closeForm() {
   document.getElementById("blur").style.display = "none";
 
+  document.getElementById("getStarted").style.display="block";
   
 }
 function openProduct() {
@@ -74,7 +79,12 @@ function openDevTeam() {
 
 <div id="blur" id="blur">
 	<div class="loginbox" id="myform">
+         <div id="close">&times;</div>
+         <script type="text/javascript">
+         	var closeBtn= document.getElementById('close');
 
+           closeBtn.addEventListener('click',closeForm);
+         </script>
 		<img src="avatar.jpg" class="avatar">
 		<h1>L O G I N</h1>
 		<form method="post" action=" http://localhost/ArtGallery/check.php"class="popup">
