@@ -15,7 +15,8 @@ $count=pg_num_rows($result);
   if ($count==1) {
         echo "Login Successfull";
         $error="valid";
-        header("Location: index.php"); 
+        $_SESSION["person"]=$user;
+        header("Location: homepage.php"); 
         exit();
 
     } else {

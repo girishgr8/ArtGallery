@@ -1,0 +1,272 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+.button {
+	background-color: $blue;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+	&:hover {
+		background-color: white;
+		color: $blue;
+		border: 2px solid $blue;
+	}
+}
+#bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 5%;
+	display: none;
+	z-index: 2;
+	justify-content: center;
+	position: fixed;
+	align-items: center;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.info{
+	color: black;
+	margin-left: 90px;
+	margin-bottom: 50px;
+	font-family: timesnewroman;
+	text-transform:uppercase;
+}
+
+#modal-contents {
+	background: url("p3bg.jpg");
+	opacity: 1;
+	height: 500px;
+	z-index: 2;
+	width: 600px;
+	background-size: cover;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+
+#close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	cursor: pointer;
+	&:hover {
+		color: #666;
+	}
+}
+
+.middle{
+	transition: .5s ease;
+  opacity: 0;
+  top:50%;
+  left: 50%;
+  background-color: black;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.section-dark .text{
+	background-color: white;
+	color: black;
+}
+
+.artcontainer:hover img {
+  opacity: 0.3;
+}
+
+.artcontainer:hover .middle {
+  opacity: 1;
+}
+
+.artcontainer {
+	margin-right: 50px;
+	display: inline-block;
+  position: relative;
+  height: 300px;
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+
+.exclusive .image{
+	transition: transform .3s;
+}
+ .exclusive .image:hover{
+	transform: scale(1.051);
+}
+
+
+.left{
+	width: 30%;
+	float: left;
+}
+
+.right{
+	width: 70%;
+	float: right;
+}
+
+
+.section-dark .image{
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.image{
+opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+	/*border: 6px solid silver;
+	border-color: #666;*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: 300px;
+	width: 300px;
+
+}
+
+.section h2{
+	text-align: center;
+	font-family: timesnewroman;
+	margin-bottom: 30px;
+}
+
+#headerlink{
+	color: black;
+	padding: 15px;
+	float: right;
+	font-size: 25px;
+    padding-right: 50px;
+	text-decoration: none;
+	font-style: italic;
+	font-family: timesnewroman;
+}
+ 
+
+.header a{
+	transition: transform .3s;
+}
+
+.header img{
+	transition: transform .3s;
+	padding-right: 50px;
+	height: 50px;
+	float: right;
+	padding-top: 7px;
+	width: 50px;
+}
+.header img:hover{
+	transform: scale(1.1);	
+}
+
+.header a:hover{
+	transform: scale(1.1);
+}
+
+.header{
+    opacity: 0.9;
+    background: white;
+    margin-right: 100px;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    
+  }
+
+.img1, .img2, .img3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.img1{
+  background-image:url('1.jpg');
+  min-height:100%;
+}
+
+.img2{
+  background-image:url('2.jpg');
+  min-height:400px;
+}
+
+.img3{
+  background-image:url('3.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.infobox{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.infobox .border{
+	opacity:0.8;
+  background-color: white;
+  color:black;
+  padding:20px;
+}
+
+.infobox .border.trans{
+  background-color:transparent;
+  color: white;
+}
+
+@media(max-width:568px){
+  .img1, .img2, .img3{
+    background-attachment:scroll;
+  }
+}
+
+#user{
+	position: relative;
+	z-index: 1;
+}
