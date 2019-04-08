@@ -24,26 +24,26 @@ function openModal(){
          
 
 }
-document.getElementById("trend1").onclick = function() {
+document.getElementById("1").onclick = function() {
   openModal();
-  document.getElementById("modalImg").src=document.getElementById('trend1').src ;
+  document.getElementById("modalImg").src=document.getElementById('1').src ;
   document.getElementById('title').innerHTML = 'The Vase';
   document.getElementById('artist').innerHTML = 'Artist: Hemlich';
   document.getElementById('artworktype').innerHTML = 'Category: Vases';
   document.getElementById('cost').innerHTML = 'Cost: $10000';
 
 }
-document.getElementById("trend2").onclick = function() {
+document.getElementById("2").onclick = function() {
   openModal();
-  document.getElementById("modalImg").src=document.getElementById('trend2').src ;
+  document.getElementById("modalImg").src=document.getElementById('2').src ;
   document.getElementById('title').innerHTML = 'Starry Night';
    document.getElementById('artist').innerHTML = 'Artist: Geuian';
     document.getElementById('artworktype').innerHTML = 'Category: Canvas';
   document.getElementById('cost').innerHTML = 'Cost: $20000';
 }
-document.getElementById("trend3").onclick = function() {
+document.getElementById("3").onclick = function() {
   openModal();
-  document.getElementById("modalImg").src=document.getElementById('trend3').src ;
+  document.getElementById("modalImg").src=document.getElementById('3').src ;
   document.getElementById('title').innerHTML = 'Zangle Zob';
    document.getElementById('artist').innerHTML = 'Artist: Wessels';
     document.getElementById('artworktype').innerHTML = 'Category: Digital Art';
@@ -54,6 +54,34 @@ document.getElementById("trend3").onclick = function() {
 function closeModal(){
   modal.style.display='none';
 }
+
+   var prev= document.getElementById('prev');
+
+           prev.addEventListener('click',previ);
+function previ(){
+  var i;
+  var img = new Image();
+  img.src = document.getElementById('1').src;
+  for (i = 1; i < 3; i++){
+    document.getElementById(""+i+"").src=document.getElementById(""+(i+1)+"").src ;
+  }
+  document.getElementById('3').src=img.src;
+}
+
+
+var next= document.getElementById('next');
+
+           next.addEventListener('click',nexti);
+function nexti(){
+  var i;
+  var img = new Image();
+  img.src = document.getElementById('3').src;
+  for (i = 3; i >1; i--){
+    document.getElementById(""+i+"").src=document.getElementById(""+(i-1)+"").src ;
+  }
+  document.getElementById('1').src=img.src;
+}
+
 }
 
   </script>
@@ -114,29 +142,38 @@ function closeModal(){
 
   <section class="section section-light">
     <h2>T R E N D I N G</h2>
-  
-    <button id="shit" class="button" >Click me</button>
+
+  <a class="prev" id="prev" >&#10094;</a>
+  <script type="text/javascript">
+
+         </script>
+
    <div class="artcontainer">
-    <img src="art2.jpg" id="trend1"  class="image" style="width:100%">
+    <img src="art2.jpg" id="1"  class="image" style="width:100%">
     <div class="middle">
     <div class="text">The Vase</div>
   </div>
     </div>
 
     <div class="artcontainer">
-    <img src="art1.jpg" class="image" id="trend2"  style="width:100%">
+    <img src="art1.jpg" class="image" id="2"  style="width:100%">
     <div class="middle">
     <div class="text">Starry Night</div>
   </div>
     </div>
 
     <div class="artcontainer">
-    <img src="art8.jpg" class="image" id="trend3"  style="width:100%">
+    <img src="art8.jpg" class="image" id="3"  style="width:100%">
     <div class="middle">
     <div class="text">Zangle Zob</div>
   </div>
     </div>
+ <a class="next" id="next">&#10095;</a>
+ <script type="text/javascript">
+          var next= document.getElementById('next');
 
+           //next.addEventListener('click',);
+         </script>
   </section>
 
   <div class="img2">
@@ -223,6 +260,8 @@ function closeModal(){
 
     </div>
   </div>
+
+    <button id="shit" class="button" >Click me</button>
 </body>
 </head>
 </html>
