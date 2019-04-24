@@ -35,8 +35,6 @@ function closeForm() {
 function openProduct() {
   document.getElementById("s").style.display = "block";
 
-  document.getElementById("getStarted").style.display="none";
-
   
 }
 
@@ -45,8 +43,6 @@ function closeAll() {
 document.getElementById("Contact").style.display = "none";
 document.getElementById("DevTeam").style.display = "none";
 document.getElementById("devInfo").style.display = "none";
-
-  document.getElementById("getStarted").style.display="block";
   
 }
 function openContact() {
@@ -111,7 +107,7 @@ function openDevTeam() {
 
 		<img src="avatar.jpg" class="avatar">
 		<h1>L O G I N</h1>
-		<form method="post" action=" http://localhost/ArtGallery/check.php"class="popup">
+		<form method="post" action=" http://localhost/ArtGallery/checkArtist.php"class="popup">
 			
 			<p>Username</p>
 			<input type="text" name="username" placeholder="Enter Username">
