@@ -2,18 +2,6 @@
 $db = pg_connect("host=localhost port=5432 dbname=Gallery user=postgres password=gayatri"); 
  session_start();
 
- 
- $user = (isset($_POST['username']) ? $_POST['username'] : '');
- $password = (isset($_POST['password']) ? $_POST['password'] : '');
-
-
-$query="SELECT * FROM customer WHERE username = '{$user}' AND password = '{$password}' ";
-
-$result = pg_query($db,$query); 
- 
-$count=pg_num_rows($result);
-
-
 
 
 $title="SELECT title FROM art";
@@ -31,7 +19,7 @@ $count3=pg_num_rows($result3);
 $count4=pg_num_rows($result4);
 
   if ($count1>1 && $count2>1 && $count3>1) {
-        //echo "Login Successfull";
+        echo "Login Successfull";
         $error="valid";
        
         while($row = pg_fetch_row($result1))
@@ -58,41 +46,14 @@ $count4=pg_num_rows($result4);
    
     }
         //header("Location: homepage.php"); 
-        
-
-    } 
-
-
-
-
-
-  if ($count==1) {
-        echo "Login Successfull";
-        $error="valid";
-       
-        while($row = pg_fetch_row($result))
-        {
-        $_SESSION["person"]=$row[2]; 
-        $_SESSION["id"] = $row[0];      
-      
-    }
-        header("Location: homepage.php"); 
         exit();
 
     } else {
          echo "Login Unsuccessfull";
-          $_SESSION["errorMessage"] = "invalid";
-          header("Location: index.php"); 
+          $_SESSION["errorMessageArt"] = "invalid";
+          //header("Location: homepage.php"); 
          exit();
     }
-
-
-
-
-
-
-
-
 
 session_destroy();
 
