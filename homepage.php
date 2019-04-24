@@ -1,4 +1,17 @@
- <?php session_start(); ?>
+ <?php session_start(); 
+ 
+    $title1= $_SESSION['title'][0];
+    $title2= $_SESSION['title'][1];
+    $title3= $_SESSION['title'][2];
+    $cost1= $_SESSION['cost'][0];
+    $cost2= $_SESSION['cost'][1];
+    $cost3= $_SESSION['cost'][2];
+    $category1= $_SESSION['category'][0];
+    $category2= $_SESSION['category'][1];
+    $category3= $_SESSION['category'][2];
+    
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -14,6 +27,16 @@
 var modal= document.getElementById('bg-modal');
 var modalBtn= document.getElementById('shit');
 var closeBtn= document.getElementById('close');
+var title1=<?php echo json_encode($title1); ?>;
+var title2=<?php echo json_encode($title2); ?>;
+var title3=<?php echo json_encode($title3); ?>;
+var cost1=<?php echo json_encode($cost1); ?>;
+var cost2=<?php echo json_encode($cost2); ?>;
+var cost3=<?php echo json_encode($cost3); ?>;
+var category1=<?php echo json_encode($category1); ?>;
+var category2=<?php echo json_encode($category2); ?>;
+var category3=<?php echo json_encode($category3); ?>;
+var javascriptVariable = 1;
 
 modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click',closeModal);
@@ -24,32 +47,44 @@ function openModal(){
          
 
 }
-document.getElementById("trend1").onclick = function() {
+document.getElementById("1").onclick = function() {
   openModal();
-  document.getElementById("modalImg").src=document.getElementById('trend1').src ;
-  document.getElementById('title').innerHTML = 'The Vase';
+  document.getElementById("modalImg").src=document.getElementById('1').src ;
+  document.getElementById('title').innerHTML = title1;
   document.getElementById('artist').innerHTML = 'Artist: Hemlich';
-  document.getElementById('artworktype').innerHTML = 'Category: Vases';
-  document.getElementById('cost').innerHTML = 'Cost: $10000';
+  document.getElementById('artworktype').innerHTML = 'Category: '+category1;
+  document.getElementById('cost').innerHTML = 'Cost: $'+cost1;
+
+ 
+  javascriptVariable = 1;
+ 
+
+
 
 }
-document.getElementById("trend2").onclick = function() {
+document.getElementById("2").onclick = function() {
   openModal();
-  document.getElementById("modalImg").src=document.getElementById('trend2').src ;
-  document.getElementById('title').innerHTML = 'Starry Night';
+  document.getElementById("modalImg").src=document.getElementById('2').src ;
+  document.getElementById('title').innerHTML = title2;
    document.getElementById('artist').innerHTML = 'Artist: Geuian';
-    document.getElementById('artworktype').innerHTML = 'Category: Canvas';
-  document.getElementById('cost').innerHTML = 'Cost: $20000';
+    document.getElementById('artworktype').innerHTML = 'Category: '+category2;
+  document.getElementById('cost').innerHTML = 'Cost: $'+cost2;
+  
+  javascriptVariable = 2;
 }
-document.getElementById("trend3").onclick = function() {
+document.getElementById("3").onclick = function() {
   openModal();
-  document.getElementById("modalImg").src=document.getElementById('trend3').src ;
-  document.getElementById('title').innerHTML = 'Zangle Zob';
+  document.getElementById("modalImg").src=document.getElementById('3').src ;
+  document.getElementById('title').innerHTML = title3;
    document.getElementById('artist').innerHTML = 'Artist: Wessels';
-    document.getElementById('artworktype').innerHTML = 'Category: Digital Art';
-  document.getElementById('cost').innerHTML = 'Cost: $30000';
+    document.getElementById('artworktype').innerHTML = 'Category: '+category3;
+  document.getElementById('cost').innerHTML = 'Cost: $'+cost3;
+  
+  javascriptVariable = 3;
 }
-
+document.getElementById("cart2").onclick = function() {
+ window.location.href = "cart.php?select=" + javascriptVariable; 
+}
 
 function closeModal(){
   modal.style.display='none';
@@ -75,7 +110,9 @@ function closeModal(){
     
       </div>
 
-		
+		<div id="cart">
+      <button  class="btn" name="cart" id="cart2">Add to Cart</button>
+    </div>
 
 	</div>
 </div>
@@ -117,21 +154,21 @@ function closeModal(){
   
     <button id="shit" class="button" >Click me</button>
    <div class="artcontainer">
-    <img src="art2.jpg" id="trend1"  class="image" style="width:100%">
+    <img src="art2.jpg" id="1"  class="image" style="width:100%">
     <div class="middle">
     <div class="text">The Vase</div>
   </div>
     </div>
 
     <div class="artcontainer">
-    <img src="art1.jpg" class="image" id="trend2"  style="width:100%">
+    <img src="art1.jpg" class="image" id="2"  style="width:100%">
     <div class="middle">
     <div class="text">Starry Night</div>
   </div>
     </div>
 
     <div class="artcontainer">
-    <img src="art8.jpg" class="image" id="trend3"  style="width:100%">
+    <img src="art8.jpg" class="image" id="3"  style="width:100%">
     <div class="middle">
     <div class="text">Zangle Zob</div>
   </div>
