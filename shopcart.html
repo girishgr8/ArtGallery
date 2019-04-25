@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript">
+        window.onload=function(){
+var button = document.getElementById('b1');
+var button2 = document.getElementById('b2');
+var button3 = document.getElementById('b3');
+
+button.onclick = function() {
+    var div = document.getElementById('item1');
+    
+        div.style.display = 'none';
+    
+};
+
+
+
+button2.onclick = function() {
+    var div2 = document.getElementById('item2');
+    
+        div2.style.display = 'none';
+    
+};
+
+
+button3.onclick = function() {
+    var div3 = document.getElementById('item3');
+    
+        div3.style.display = 'none';
+    
+};
+
+}
+  </script>
+  <link rel="stylesheet" type="text/css" href="shopcart.css">
+</head>
+<body>
+    <div class="header">
+
+    <a href="" ><img src="cart.svg" > </a>
+
+    <a href="#" id="headerlink">Home</a>
+    <a href="#" id="headerlink">About</a>
+    <a href="#" id="headerlink">Contact</a>
+   
+
+  </div>
+<div class="wrap cf">
+  <h1 class="projTitle">Welcome to the <span>-alluring-</span> Shopping Cart</h1>
+
+ <!-- Product #1 -->
+  <div class="item" id="item1">
+    <div class="buttons">
+       <button class=".delete-btn" type="button" name="button" id="b1">
+        <img src="cross.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="image">
+      <img src="art1.jpg" alt="" class="pic" />
+    </div>
+ 
+    <div class="description">
+      <span>Starry Night</span><!-- Title-->
+      <span>Vincent Gogh</span><!-- Artist-->
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <img src="plus.svg" alt="" />
+      </button>
+      <input type="text" name="name" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <img src="minus.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="total-price">$549</div>
+  </div>
+
+   <!-- Product #2 -->
+  <div class="item" id="item2">
+    <div class="buttons">
+       <button class=".delete-btn" type="button" name="button" id="b2">
+        <img src="cross.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="image">
+      <img src="art8.jpg" alt="" class="pic" />
+    </div>
+ 
+    <div class="description">
+      <span>Starry Night</span><!-- Title-->
+      <span>Vincent Gogh</span><!-- Artist-->
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <img src="plus.svg" alt="" />
+      </button>
+      <input type="text" name="name" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <img src="minus.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="total-price">$549</div>
+  </div>
+
+   <!-- Product #3 -->
+  <div class="item" id="item3">
+    <div class="buttons">
+       <button class=".delete-btn" type="button" name="button" id="b3">
+        <img src="cross.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="image">
+      <img src="art2.jpg" alt="" class="pic" />
+    </div>
+ 
+    <div class="description">
+      <span>The Vase</span><!-- Title-->
+      <span>Heimlicj</span><!-- Artist-->
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <img src="plus.svg" alt="" />
+      </button>
+      <input type="text" name="name" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <img src="minus.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="total-price">$549</div>
+  </div>
+
+<div class="final"><span class="label">Total:</span><span class="value">$44.00</span></div>
+</div>
+</body>
+</html>
