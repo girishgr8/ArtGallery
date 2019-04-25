@@ -180,6 +180,31 @@ input:focus {
 }
 
 
+.titles{
+	margin-left: 20px;
+	text-align: center;
+}
+.heading{
+	margin-right: 80px;
+	text-transform: uppercase;
+	font-family: timesnewroman;
+	font-size: 30px;
+	display: inline-block;
+}
+
+.heading .art{
+
+}
+
+.heading .quant{
+	margin-left: 100px;
+}
+
+.heading .cost{
+	
+}
+
+
 .header a{
 	transition: transform .3s;
 }
