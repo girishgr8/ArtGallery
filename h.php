@@ -36,7 +36,7 @@ var cost3=<?php echo json_encode($cost3); ?>;
 var category1=<?php echo json_encode($category1); ?>;
 var category2=<?php echo json_encode($category2); ?>;
 var category3=<?php echo json_encode($category3); ?>;
-var javascriptVariable = 0;
+var javascriptVariable = 1;
 
 modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click',closeModal);
@@ -81,11 +81,7 @@ document.getElementById("3").onclick = function() {
   javascriptVariable = 3;
 }
 document.getElementById("cart2").onclick = function() {
-
  window.location.href = "cart.php?select=" + javascriptVariable; 
- document.cookie="select="+javascriptVariable;
-
-
 }
 function closeModal(){
   modal.style.display='none';
@@ -133,7 +129,7 @@ function nexti(){
       </div>
 
     <div id="cart">
-      <button  class="button" name="cart" id="cart2">Add to Cart</button>
+      <button  class="btn" name="cart" id="cart2">Add to Cart</button>
     </div>
 
   </div>
@@ -153,7 +149,7 @@ function nexti(){
    }
 ?>
 </a>
-      <a href="http://localhost/ArtGallery/shopcart.php" ><img src="cart.svg" > </a>
+      <a href="" ><img src="cart.svg" > </a>
 
     <a href="http://localhost/ArtGallery/index.php" id="headerlink">Home</a>
     

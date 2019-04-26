@@ -1,0 +1,49 @@
+[33mcommit 074cb0a698be650ec93d446838d5186099025f02[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Gayatri <gayatrivasan1@gmail.com>
+Date:   Wed Apr 24 15:57:11 2019 +0530
+
+    Revert "Registration done, Cart Fetch done"
+    
+    This reverts commit 561bcf94896e8a15fb854a26ecc414f384d3ef20.
+
+[33mcommit 561bcf94896e8a15fb854a26ecc414f384d3ef20[m
+Author: Gayatri <gayatrivasan1@gmail.com>
+Date:   Wed Apr 24 15:56:49 2019 +0530
+
+    Registration done, Cart Fetch done
+
+[33mcommit cdf96f851b6dec997c3ed0c955da4404a56074a4[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Gayatri <gayatrivasan1@gmail.com>
+Date:   Mon Apr 8 02:39:59 2019 +0530
+
+    Added homepage, user sessions created
+
+[33mcommit 2820b040b96164b217a7ff1ce6939b769b8daab3[m
+Author: Gayatri <gayatrivasan1@gmail.com>
+Date:   Sun Apr 7 18:48:39 2019 +0530
+
+    PHP connection done, HomePage done
+
+[33mcommit 90056a588ff2b3c35e734b527ab9c5ec2610aa10[m
+Author: Girish <giryagr8@gmail.com>
+Date:   Sat Apr 6 13:28:49 2019 +0530
+
+    Added Image Slider
+
+[33mcommit bf5eb9176c6277127f5673ba414fc011d2211b5f[m
+Author: Girish <giryagr8@gmail.com>
+Date:   Sat Apr 6 12:50:09 2019 +0530
+
+    Added events page
+
+[33mcommit 45e56ca5bce284dc606f084c9b220c275986c1d6[m
+Author: Gayatri <gayatrivasan1@gmail.com>
+Date:   Sat Apr 6 12:17:40 2019 +0530
+
+    Sign in popup added
+
+[33mcommit 660733cee775650522187265be5881b932fc5f3b[m
+Author: Gayatri <gayatrivasan1@gmail.com>
+Date:   Fri Apr 5 22:20:49 2019 +0530
+
+    Index Page Added

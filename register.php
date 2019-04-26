@@ -1,53 +1,36 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Registration system PHP and MySQL</title>
-  <link rel="stylesheet" type="text/css" href="style2.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg_style.css">
 </head>
 <body>
-  <div class="header">
-  	<h2>R E G I S T E R</h2>
-  </div>
-	
-  <form method="post" action="insert.php">
-
-    <div class="input-group">
-      <label>Name</label>
-      <input type="text" name="name" >
+    <div class="container">
+        <div class="icon">
+             <div id="logo">
+                <p>Register Here to Explore new Art</p>
+            </div>
+        </div>
+        <form class="forms" method="post" action="insert.php"> 
+            <img src="name.png" alt="">
+            <input type="text" name="name" placeholder="Enter your name">
+            <img src="user.png" alt="">
+            <input type="text" name="username" placeholder="User Name">
+            <img src="DOB.png" alt="">
+            <input type="Date" name="dob" placeholder="Date of Birth">
+            <img src="email.png" alt="">
+            <input type="email" name="email" placeholder="Email id">
+            <img src="pswd.png" alt="">
+            <input type="password" name="password_1" placeholder="Password">
+             <img src="pswd.png" alt="">
+            <input type="password" name="password_2" placeholder="Confirm password">
+            <img src="address.png" alt="">
+            <input type="text" name="address" placeholder="Address">
+            <input type="checkbox">
+            <p class="agree">Accept Terms and Conditions</p>
+            <input type="submit" class="btn" value="Signup" name="reg_user">
+        </form>
     </div>
-
-    <div class="input-group">
-      <label>Username</label>
-      <input type="text" name="username" >
-    </div>
-
-    <div class="input-group">
-      <label>Date of Birth</label>
-      <input type="text" name="dob" >
-    </div>
- 
-  	<div class="input-group">
-  	  <label>Email</label>
-  	  <input type="email" name="email" >
-  	</div>
-  	<div class="input-group">
-  	  <label>Password</label>
-  	  <input type="password" name="password_1">
-  	</div>
-  	<div class="input-group">
-  	  <label>Confirm password</label>
-  	  <input type="password" name="password_2">
-  	</div>
-
-    <div class="input-group">
-      <label>Address</label>
-      <input type="text" name="address" >
-    </div>
-  	<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user">Register</button>
-  	</div>
-  	
-  </form>
 </body>
 </html>

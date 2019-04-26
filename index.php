@@ -137,7 +137,7 @@ function openDevTeam() {
 <!---<button id="sell" type="button" onclick="openForm()">Sell Your Products!</button>-->
 <?php
    if (isset($_SESSION['errorMessage'])){
-     echo "<span style='color:black; top:80%; left:61%;'>Check your input</span>";
+     echo "<script> alert('griss topper'); </script>";
    }
 ?>
 
@@ -172,23 +172,23 @@ function openDevTeam() {
 <div class="slider" id="s">
 	<figure>
 		<div class="slide">
-			<img src="logo.png" >
+			<img src="art9.jpg" >
 			<p><b id="tag"><h1> Digital Art</h1></b></p>
 
 		</div>
 
 		<div class="slide">
-			<img src="logo2.png">
+			<img src="art11.jpg">
 			<p><b id="tag"><h1> Canvas Paintings</h1></b></p>
 		</div>
 
 		<div class="slide">
-			<img src="logo3.png">
+			<img src="art10.jpg">
 			<p><b id="tag"><h1>Sculptures</h1></b></p>
 		</div>
 
 		<div class="slide">
-			<img src="logo5.png">
+			<img src="art12.jpg">
 			<p><b id="tag"><h1>Wall Hangings</h1></b></p>
 		</div>
 

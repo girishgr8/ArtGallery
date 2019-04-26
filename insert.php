@@ -20,7 +20,7 @@ $result = pg_query($db,$query);
 if ($result) {
 
         $_SESSION["person"]=$arr[0];
-        header("Location: homepage.php"); 
+        header("Location: index.php"); 
         exit();
 } else {
     $_SESSION["errorMessage"] = "invalid";

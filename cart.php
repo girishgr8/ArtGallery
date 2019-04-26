@@ -7,7 +7,9 @@ if($db)
 }
 
 $p = (int)(isset($_SESSION['id']) ? $_SESSION['id'] : '');
-$select = (int)(isset($_GET['select']) ? $_GET['select'] : '');
+//$select = (int)(isset($_GET['select']) ? $_GET['select'] : '');
+$select=$_COOKIE['select'];
+echo $select;
 /*$n="0";
 $query2="SELECT art_id FROM art"; 
 $result2 = pg_query($db,$query2); 
@@ -48,6 +50,28 @@ if ($result) {
          //header("Location: index.php"); 
          exit();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      session_destroy();
 
      ?>
